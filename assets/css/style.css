@@ -49,12 +49,28 @@ body {
 }
 
 .container {
+
     margin-top: 24px;
     min-height: 300px;
     padding: 16px;
     background-color: #eef2ff;
     border: 2px dashed #93c5fd;
     border-radius: 10px;
+    display: flex; /* itens horizontais agora*/
+    /*flex-direction: row-reverse;  itens alinhados à direita*/
+    /* flex-direction: column; itens todos em uma coluna alinhada à esquerda */
+    /* flex-direction: column-reverse; todos os itens da coluna com a posição invertida*/
+    /* justify-content: flex-start; não mudou nada */
+    /* justify-content: flex-end; itens alinhados à direita*/
+    /*  justify-content: center; alinhados ao meio */
+    /* justify-content: space-between; muda o alinhamento entre os itens*/
+    /* justify-content: space-around; muda o espaço em volta de todos os itens */
+    justify-content: center;
+    /* align-items: stretch; */
+    /*  align-items: flex-start; itens alinhados no topo 
+      align-items: flex-end; itens alinhados no final */
+     align-items: center; 
+     gap: 16px;
 }
 
 .item {
